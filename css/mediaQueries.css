@@ -140,6 +140,12 @@
         height: 4rem;
         font-size: 2.5rem;
     }
+    header#tecHeader div#tecDiv div#numbersDiv{
+        flex-direction: row;
+    }
+    header#crewHeader div#crewDiv div#leftCrewDiv{
+        width: 80%;
+    }
 }
 
 /* Small Mobile: below 480px */
