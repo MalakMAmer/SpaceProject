@@ -1,0 +1,140 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --darkBlue: #0b0d17;
+    --lightBlue: #d0d6f9; 
+    --font-bellefair: 'Bellefair', serif;
+    --font-barlow: 'Barlow Condensed', sans-serif;
+    --space-1600: 8rem;   /* 128px */
+    --space-1200: 6rem;   /* 96px */
+    --space-1000: 5rem;   /* 80px */
+    --space-800: 4rem;    /* 64px */
+    --space-600: 3rem;    /* 48px */
+    --space-500: 2.5rem;  /* 40px */
+    --space-400: 2rem;    /* 32px */
+    --space-300: 1.5rem;  /* 24px */
+    --space-200: 1rem;    /* 16px */
+    --space-150: 0.75rem; /* 12px */
+    --space-100: 0.5rem;  /* 8px */
+    --space-50: 0.25rem;  /* 4px */
+    --space-25: 0.125rem; /* 2px */
+}
+.toUpperCase{
+    text-transform: uppercase;
+}
+ul{
+    list-style: none;
+}
+a , li a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+    transition: opacity 200ms ease;
+}
+a:hover , a:focus{
+   opacity: 0.8; 
+   cursor: pointer;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+h1 {
+    font-family: "Bellefair", serif;
+    font-size: clamp(2rem, 5vw, 3rem); /* 32px → fluid → 48px */
+    line-height: 1.2;
+}
+
+h2 {
+    font-family: "Bellefair", serif;
+    font-size: clamp(1.75rem, 4vw, 2.25rem); /* 28px → fluid → 36px */
+    line-height: 1.3;
+}
+
+h3 {
+    font-family: "Bellefair", serif;
+    font-size: clamp(1.5rem, 3.5vw, 2rem); /* 24px → fluid → 32px */
+    line-height: 1.3;
+}
+
+h4 {
+    font-family: "Bellefair", serif;
+    font-size: clamp(1.25rem, 3vw, 1.75rem); /* 20px → fluid → 28px */
+    line-height: 1.4;
+}
+
+h5 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem); /* 18px → fluid → 24px */
+    line-height: 1.4;
+    letter-spacing: 0.25rem;
+}
+
+p {
+    font-family: "Barlow", sans-serif;
+    font-size: clamp(1rem, 2vw, 1.125rem); /* 16px → fluid → 18px */
+    line-height: 1.6;
+}
+
+
+.preset-1 {
+    font-family: "Bellefair", serif;
+    font-size: clamp(4rem, 10vw, 9rem); /* 64px → fluid → 144px */
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+
+.preset-2 {
+    font-family: "Bellefair", serif;
+    font-size: clamp(3rem, 8vw, 6.25rem); /* 48px → fluid → 100px */
+    line-height: 1.146;
+}
+
+.preset-3 {
+    font-family: "Bellefair", serif;
+    font-size: clamp(2rem, 6vw, 3.5rem); /* 32px → fluid → 56px */
+    line-height: 0.642;
+}
+
+.preset-4 {
+    font-family: "Bellefair", serif;
+    font-size: clamp(1.5rem, 4vw, 2rem); /* 24px → fluid → 32px */
+    line-height: 0.367;
+}
+
+.preset-5 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: clamp(1rem, 4vw, 1.75rem); /* 16px → fluid → 28px */font-size: 1.75rem;
+    line-height: 0.336;
+    letter-spacing: 0.25rem;
+}
+.text-preset-6 {
+    font-size: 1.75rem; 
+    line-height: 1.2; 
+    font-family: 'Bellefair', serif;
+}
+
+.text-preset-7 {
+    font-size: 0.875rem; 
+    line-height: 1.2; 
+    letter-spacing: 0.125rem;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.text-preset-8 {
+    font-size: 1rem; 
+    line-height: 1.2; 
+    letter-spacing: 0.125rem;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.text-preset-9 {
+    font-size: 1.125rem; 
+    line-height: 1.8; 
+    font-family: 'Barlow', sans-serif;
+}

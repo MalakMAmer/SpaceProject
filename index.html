@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Basics -->
+    <title>Space Travel Adventures | Explore Planets & Meet Your Crew</title>
+    <meta name="description" content="Explore the wonders of space travel! Choose your destination, meet your crew, and learn about launch technology. A truly out-of-this-world experience.">
+    <meta name="keywords" content="Space travel, Moon trip, Mars, Europa, Titan, Crew, Rockets, Space tourism">
+    <meta name="author" content="Malak Magdy">
+    
+    <!-- Social Media / Open Graph -->
+    <meta property="og:title" content="Space Travel Adventures | Explore Planets & Meet Your Crew">
+    <meta property="og:description" content="Experience a truly out-of-this-world journey with our space travel website. Pick your planet, meet your crew, and learn launch secrets.">
+    <meta property="og:image" content="images/space.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Space Travel Adventures | Explore Planets & Meet Your Crew">
+    <meta name="twitter:description" content="Experience a truly out-of-this-world journey with our space travel website. Pick your planet, meet your crew, and learn launch secrets.">
+    <meta name="twitter:image" content="images/space.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/space.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/firstPage.css">
+    <link rel="stylesheet" href="css/desPage.css">
+    <link rel="stylesheet" href="css/crewPage.css">
+    <link rel="stylesheet" href="css/shipPage.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+
+    <!-- Theme color for browsers -->
+    <meta name="theme-color" content="#0B0D17">
+
+    <!-- Robots for indexing -->
+    <meta name="robots" content="index, follow">
+</head>
+<body>
+    <div id="background">
+        <nav>
+            <div id="imgDiv">
+                <img src="images/Logo.svg" alt="Navigation Logo">
+            </div>
+            <ul class="toUpperCase text-preset-8">
+                <li><a href="#" class="active" onclick="toHomePage(event)" id="li1"><span>00</span>Home</a></li>
+                <li><a href="#" onclick="toDesPage(event)" id="li2"><span>01</span>Destination</a></li>
+                <li><a href="#" onclick="toCrewPage(event)" id="li3"><span>02</span>Crew</a></li>
+                <li><a href="#" onclick="toTecPage(event)" id="li4"><span>03</span>Technology</a></li>
+            </ul>
+        </nav>
+
+        <div id="homePage">
+            <header id="homeHeader">
+                <div id="rightDiv">
+                    <h1 class="toUpperCase preset-4">SO, YOU WANT TO TRAVEL TO<span class="preset-1">Space</span></h1>
+                    <p>Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience!</p>
+                </div>
+                <div id="leftDiv">
+                    <button class="toUpperCase preset-4 " onclick="toDesPage(event)">
+                        Explore
+                    </button>
+                </div>
+            </header>
+        </div>
+
+        <div id="desPage">
+            <header id="desHeader">
+                <h3 class="toUpperCase text-preset-6 "><span>01</span>PICK YOUR DESTINATION</h3>
+                <div id="contentDiv">
+                    <div id="leftSideImg">
+                        <img src="images/moon.png" alt="">
+                    </div>
+                    <div id="rightSideDiv">
+                        <ul class="toUpperCase">
+                            <li><a href="#" onclick="changePlanet(event, 'Moon')">Moon</a></li>
+                            <li><a href="#" onclick="changePlanet(event, 'Mars')">Mars</a></li>
+                            <li><a href="#" onclick="changePlanet(event, 'Europa')">Europa</a></li>
+                            <li><a href="#" onclick="changePlanet(event, 'Titan')">Titan</a></li>
+                        </ul>
+                        <h2 id="desTitle" class="preset-2">Moon</h2>
+                        <p class="text-preset-7">See our planet as you've never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you're there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                        <div id="line"></div>
+                        <div id="numbersContainer">
+                            <div id="distance" class="toUpperCase">
+                                <p class="firstP">avg. distance</p>
+                                <p class="bold secP"><span>384,400</span> km</p>
+                            </div>
+                            <div id="traveltime" class="toUpperCase innerDiv">
+                                <p class="firstP">est. travel time</p>
+                                <p class="bold secP"><span>3 </span>days</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div id="crewPage">
+            <header id="crewHeader">
+                <h3 class="toUpperCase text-preset-6 "><span>02</span>MEET YOUR CREW</h3>
+                <div id="crewDiv">
+                    <div id="leftCrewDiv">
+                        <p class="toUpperCase" id="position">commander</p>
+                        <h2 class="toUpperCase">Douglas Hurley</h2>
+                        <p class="description">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+                        <div id="bolletsDiv">
+                            <div onclick="changeCrew(event, 1)"></div>
+                            <div onclick="changeCrew(event, 2)"></div>
+                            <div onclick="changeCrew(event, 3)"></div>
+                            <div onclick="changeCrew(event, 4)"></div>
+                        </div>
+                    </div>
+                    <div id="rightCrewDivImg">
+                        <img src="/images/firstCrew.png" alt="first crew" id="crewImg">
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div id="tecPage">
+            <header id="tecHeader">
+                <h3 class="toUpperCase text-preset-6 "><span>03</span>SPACE LAUNCH 101</h3>
+                <div id="tecDiv">
+                    <div id="numbersDiv">
+                        <div onclick="changeShip(event, 1)">1</div>
+                        <div onclick="changeShip(event, 2)">2</div>
+                        <div onclick="changeShip(event, 3)">3</div>
+                    </div>
+                    <div id="textDiv">
+                        <p id="title">THE TERMINOLOGY…</p>
+                        <h2 id="shipType" class="toUpperCase">LAUNCH VEHICLE</h2>
+                        <p id="description">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+                    </div>
+                    <div id="shipImgDiv">
+                        <img src="images/TecA.jpg" alt="space ship img">
+                    </div>
+                </div>
+            </header>
+        </div>
+        
+    </div>
+
+
+
+    <script src="js/changingThePage.js">
+    </script>
+    <script src="js/changePlanets.js">
+    </script>
+    <script src="js/changeCrew.js">
+    </script>
+    <script src="js/changeShip.js">
+    </script>
+</body>
+</html>

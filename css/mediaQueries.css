@@ -1,0 +1,207 @@
+/* ======================= MEDIA QUERIES ======================= */
+
+/* Tablet: 768px to 1024px */
+@media screen and (max-width: 1024px) {
+    div#background {
+        background-image: url("../images/tabletBckG.png");
+    }
+
+    nav {
+        padding: var(--space-200);
+    }
+
+    nav ul {
+        padding-left: var(--space-600);
+        gap: var(--space-100);
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    header {
+        flex-direction: column;
+        padding: var(--space-600);
+        gap: var(--space-100);
+    }
+
+    header div#rightDiv p {
+        width: 20rem;
+    }
+
+    header div#leftDiv button {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    header#desHeader div#contentDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header#desHeader div#contentDiv div#leftSideImg,
+    header#desHeader div#contentDiv div#rightSideDiv {
+        width: 100%;
+    }
+
+    header#desHeader div#contentDiv div#leftSideImg img {
+        width: 18rem;
+    }
+
+    header#crewHeader div#crewDiv {
+        flex-direction: column;
+        gap: var(--space-400);
+    }
+
+    header#crewHeader div#crewDiv div#rightCrewDivImg img {
+        width: 18rem;
+    }
+
+    header#tecHeader div#tecDiv {
+        flex-direction: column;
+        gap: var(--space-400);
+    }
+
+    header#tecHeader div#tecDiv div#textDiv,
+    header#tecHeader div#tecDiv div#shipImgDiv {
+        width: 100%;
+    }
+
+    header#tecHeader div#tecDiv div#shipImgDiv img {
+        width: 20rem;
+    }
+}
+
+/* Mobile: 480px to 767px */
+@media screen and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        gap: var(--space-100);
+        padding: var(--space-100);
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: var(--space-50);
+        backdrop-filter: blur(5px);
+        padding: var(--space-50);
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    header div#rightDiv h1 {
+        font-size: 1.8rem;
+    }
+
+    header div#rightDiv p {
+        width: 90%;
+        font-size: 0.85rem;
+    }
+
+    header div#leftDiv button {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    header#desHeader div#contentDiv div#leftSideImg img,
+    header#crewHeader div#crewDiv div#rightCrewDivImg img,
+    header#tecHeader div#tecDiv div#shipImgDiv img {
+        width: 15rem;
+    }
+
+    header#desHeader div#contentDiv div#rightSideDiv ul li a {
+        font-size: 0.8rem;
+    }
+
+    header#desHeader div#contentDiv div#rightSideDiv h2 {
+        font-size: 1.5rem;
+    }
+
+    header#desHeader div#contentDiv div#rightSideDiv p {
+        font-size: 0.85rem;
+    }
+
+    header#crewHeader div#crewDiv div#leftCrewDiv h2.name {
+        font-size: 1.5rem;
+    }
+
+    header#tecHeader div#tecDiv div#textDiv h2 {
+        font-size: 1.3rem;
+    }
+
+    header#tecHeader div#tecDiv div#textDiv p#description {
+        font-size: 0.85rem;
+    }
+
+    header#tecHeader div#tecDiv div#numbersDiv div {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2.5rem;
+    }
+}
+
+/* Small Mobile: below 480px */
+@media screen and (max-width: 480px) {
+    nav ul {
+        gap: var(--space-25);
+        padding: var(--space-25);
+    }
+
+    nav ul li a {
+        font-size: 0.7rem;
+    }
+
+    header div#rightDiv h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    header div#rightDiv p {
+        font-size: 0.75rem;
+        width: 95%;
+        text-align: center;
+    }
+
+    header div#leftDiv button {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    header#desHeader div#contentDiv div#leftSideImg img,
+    header#crewHeader div#crewDiv div#rightCrewDivImg img,
+    header#tecHeader div#tecDiv div#shipImgDiv img {
+        width: 12rem;
+    }
+
+    header#desHeader div#contentDiv div#rightSideDiv h2,
+    header#crewHeader div#crewDiv div#leftCrewDiv h2.name,
+    header#tecHeader div#tecDiv div#textDiv h2 {
+        font-size: 1.2rem;
+    }
+
+    header#desHeader div#contentDiv div#rightSideDiv p,
+    header#crewHeader div#crewDiv div#leftCrewDiv p.description,
+    header#tecHeader div#tecDiv div#textDiv p#description {
+        font-size: 0.75rem;
+    }
+
+    header#tecHeader div#tecDiv div#numbersDiv div {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 2rem;
+    }
+
+    header#crewHeader div#crewDiv div#leftCrewDiv div#bolletsDiv div {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    header#tecHeader div#tecDiv div#numbersDiv{
+        flex-direction: row;
+    }
+    header#crewHeader div#crewDiv div#leftCrewDiv{
+        width: 80%;
+    }
+}

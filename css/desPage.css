@@ -1,0 +1,70 @@
+
+header#desHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    transition: all 200ms ease;
+}
+header#desHeader h3{
+    padding-bottom: 1rem;
+}
+header#desHeader h3 span{
+    padding: 1.6rem;
+}
+header#desHeader div#contentDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: var(--space-100);
+}
+header#desHeader div#contentDiv div#leftSideImg{
+    padding: var(--space-100);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header#desHeader div#contentDiv div#leftSideImg img{
+    width: 23rem;
+}
+header#desHeader div#contentDiv div#rightSideDiv{
+    width: 50%;
+}
+header#desHeader div#contentDiv div#rightSideDiv ul{
+    display: flex;
+    justify-content: start;
+    gap: var(--space-200);
+    padding:var(--space-100) 0;
+}
+header#desHeader div#contentDiv div#rightSideDiv ul li a{
+    color: white;
+}
+header#desHeader div#contentDiv div#rightSideDiv h2{
+    padding: var(--space-200) 0;
+}
+header#desHeader div#contentDiv div#rightSideDiv p{
+    padding-bottom: var(--space-100);
+}
+header#desHeader div#contentDiv div#rightSideDiv div#line{
+    display: inline-block;
+    width: 20rem;
+    height: 1px;
+    background-color: rgba(240, 248, 255, 0.5);
+    margin: var(--space-200) 0;
+}
+header#desHeader div#contentDiv div#rightSideDiv div#numbersContainer{
+    display: flex;
+    gap: var(--space-600);
+}
+header#desHeader div#contentDiv div#rightSideDiv div#numbersContainer div.innerDiv{
+
+}
+header#desHeader div#contentDiv div#rightSideDiv div#numbersContainer div.innerDiv p.firstP{
+
+}
+header#desHeader div#contentDiv div#rightSideDiv div#numbersContainer div.innerDiv p.secP{
+
+}
+header#desHeader div#contentDiv div#rightSideDiv div#numbersContainer div.innerDiv p.secP span{
+
+}

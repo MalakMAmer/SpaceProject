@@ -1,0 +1,66 @@
+
+header#tecHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+}
+header#tecHeader h3{
+    padding: var(--space-200);
+}
+header#tecHeader div#tecDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header#tecHeader div#tecDiv div#numbersDiv{
+    padding: var(--space-400);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-200);
+}
+header#tecHeader div#tecDiv div#numbersDiv div{
+    width: 5rem;
+    height: 5rem;
+    background-color: transparent;
+    color: white;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    border: 1px solid white;
+    transition: all 200ms ease;
+}
+header#tecHeader div#tecDiv div#numbersDiv div:hover{
+    color: black;
+    background-color: aliceblue;
+    opacity: 0.8;
+    cursor: pointer;
+}
+header#tecHeader div#tecDiv div#numbersDiv div:active{
+    color: black;
+    background-color: aliceblue;
+}
+header#tecHeader div#tecDiv div#textDiv{
+    width: 35%;
+}
+header#tecHeader div#tecDiv div#textDiv p#title{
+    
+}
+header#tecHeader div#tecDiv div#textDiv h2{
+    padding: var(--space-200) 0;
+}
+header#tecHeader div#tecDiv div#textDiv p#description{
+
+}
+header#tecHeader div#tecDiv div#shipImgDiv{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header#tecHeader div#tecDiv div#shipImgDiv img{
+    width: 24rem;
+    border-radius: 10px;
+}
